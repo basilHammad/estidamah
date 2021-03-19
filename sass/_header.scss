@@ -1,0 +1,228 @@
+.header {
+  & .top {
+    height: 64px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .region-above-burger {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 1140px;
+      max-width: 1140px;
+
+      & .icons {
+        margin-left: 25px;
+      }
+
+      & .search-icon {
+        margin-left: 20px;
+
+        @media (max-width: 990px) {
+          display: none;
+        }
+      }
+
+      & .switch-language {
+        margin-left: 20px;
+      }
+
+      & .search-website {
+        height: 35px;
+        display: none;
+
+        & .search-input {
+          padding: 15px;
+          height: 100%;
+          // transform: translateX(10px);
+
+          &:focus {
+            outline: 1px solid blue;
+          }
+        }
+
+        & .btn-search {
+          height: 100%;
+        }
+
+        @media (max-width: 990px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  & .bottom {
+    background-color: $primary-color;
+
+    position: relative;
+    & .nav-wrapper {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+
+      @media (max-width: 1200px) {
+        max-width: 930px;
+      }
+      @media (max-width: 990px) {
+        max-width: 100%;
+        padding: 0 15px;
+        justify-content: flex-end;
+        flex-direction: column;
+      }
+
+      & .logo-container {
+        width: 140px;
+        flex: 0 0 auto;
+      }
+
+      & .logo {
+        position: absolute;
+        top: -65px;
+        padding: 20px 20px 16px;
+        width: 140px;
+        height: 179px;
+        background-color: #fff;
+        box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 20%);
+        border-radius: 0 0 15px 15px;
+        z-index: 100;
+
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+
+        @media (max-width: 990px) {
+          width: 120px;
+          height: 145.39px;
+          left: 15px;
+          // top: 0;
+        }
+      }
+
+      & .nav-bar {
+        z-index: 50;
+        padding: 0 30px;
+
+        & .navbar-toggler {
+          width: 45px;
+          height: 45px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          padding: 10px 0;
+          background-color: transparent;
+          display: none;
+
+          & div {
+            transition: 0.3s;
+          }
+
+          @media (max-width: 990px) {
+            display: flex;
+          }
+        }
+
+        & .navbar-toggler.active {
+          & :nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+          }
+          & :nth-child(2) {
+            background-color: transparent;
+          }
+          & :nth-child(3) {
+            transform: rotate(-45deg) translate(4px, -4px);
+          }
+        }
+
+        & .nav-items {
+          list-style: none;
+          display: flex;
+          flex-wrap: wrap;
+
+          @media (max-width: 990px) {
+            display: none;
+          }
+
+          & .nav-item {
+            padding: 10px 15px;
+            text-align: center;
+            color: #fff;
+
+            & .nav-link {
+              color: inherit;
+            }
+
+            .hover-drop-down {
+              position: absolute;
+              bottom: -40px;
+              left: 0;
+              background-color: #ffffff9e;
+              width: 100%;
+              display: none;
+
+              & .hover-drop-down-items {
+                max-width: 1140px;
+                display: flex;
+                margin: auto;
+                padding-left: 158px;
+
+                @media (max-width: 1200px) {
+                  padding-left: 254px;
+                }
+
+                & .hover-drop-down-item {
+                  padding: 10px 15px;
+                  text-align: center;
+                  color: #333;
+                  height: 40px;
+
+                  & a {
+                    color: inherit;
+                  }
+
+                  &:hover {
+                    color: $primary-color;
+                  }
+                }
+              }
+            }
+
+            &:hover {
+              background-color: #fff;
+              color: $primary-color;
+
+              & .hover-drop-down {
+                display: block;
+              }
+            }
+          }
+
+          & .nav-item.active {
+            background-color: #fff;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.burger-container {
+  display: flex;
+  justify-content: flex-end;
+
+  & .burger-top,
+  .burger-middle,
+  .burger-bottom {
+    width: 50%;
+    height: 1px;
+    background-color: #fff;
+  }
+}

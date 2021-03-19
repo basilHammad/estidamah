@@ -1,0 +1,124 @@
+.latest-news {
+  padding: 75px 0;
+
+  & .title-wrapper {
+    max-width: 1140px;
+    margin: auto;
+    padding: 15px;
+
+    @media (max-width: 1200px) {
+      max-width: 930px;
+    }
+    @media (max-width: 990px) {
+      max-width: 690px;
+    }
+    @media (max-width: 767px) {
+      max-width: 540px;
+      padding: 0 15px;
+
+      & p {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  & .cards-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+
+    @media (max-width: 1200px) {
+      max-width: 930px;
+    }
+    @media (max-width: 990px) {
+      max-width: 690px;
+    }
+    @media (max-width: 767px) {
+      max-width: 540px;
+      padding: 0 15px;
+      flex-direction: column;
+    }
+
+    & .card-wrapper {
+      flex: 0 0 33.333%;
+      padding: 15px;
+      display: flex;
+
+      @media (max-width: 767px) {
+        padding: 0;
+        margin-bottom: 15px;
+      }
+
+      & .card-larg {
+        border-bottom: 3px solid #ffd100;
+      }
+
+      & .img-wrapper {
+        overflow: hidden;
+
+        & img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          transition: 0.2s;
+        }
+      }
+
+      & .title-section {
+        padding: 10px;
+      }
+
+      & .info-wrapper {
+        padding: 15px;
+        margin-bottom: 18px;
+
+        & .field-wrapper {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          font-size: 14px;
+
+          & i {
+            margin-right: 5px;
+            color: #444750;
+          }
+
+          & .field {
+            font-size: 14px;
+          }
+        }
+      }
+
+      & .see-more-wrapper {
+        padding: 15px;
+
+        & .see-more {
+          border: 50%;
+        }
+      }
+
+      &:hover .card-img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  & .view-all-wrapper {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    @media (max-width: 1200px) {
+      max-width: 930px;
+    }
+    @media (max-width: 990px) {
+      max-width: 690px;
+    }
+    @media (max-width: 767px) {
+      max-width: 540px;
+      padding: 0 15px;
+    }
+  }
+}

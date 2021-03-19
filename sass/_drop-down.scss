@@ -1,0 +1,114 @@
+.drop-down-nav {
+  width: 100%;
+  background-color: $primary-color;
+  padding-top: 60px;
+  display: none;
+
+  @media (min-width: 990px) {
+    display: none !important;
+  }
+
+  & .drop-down-nav-items {
+    list-style: none;
+
+    & .drop-down-nav-item {
+      border-bottom: 1px solid #006630;
+      border-top: 1px solid #19804a;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+
+      & .drop-down-nav-item-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        border-bottom: 1px solid #006630;
+        border-top: 1px solid #19804a;
+        color: #fff;
+
+        &:hover:not(:last-child) {
+          background-color: #fff;
+          color: $primary-color;
+        }
+      }
+
+      & .sub-menu {
+        padding: 0 20px;
+        display: none;
+
+        & .sub-menu-item {
+          padding: 20px;
+          border-bottom: 1px solid #006630;
+          border-top: 1px solid #19804a;
+
+          &:hover {
+            background-color: #fff;
+            color: $primary-color;
+          }
+        }
+      }
+
+      & a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 16px;
+        cursor: pointer;
+        flex: auto;
+      }
+
+      & i {
+        transform: rotate(90deg);
+        cursor: pointer;
+        transition: 0.2s;
+      }
+      & i.active {
+        transform: rotate(270deg);
+      }
+    }
+
+    & .drop-down-nav-item:first-child {
+      background-color: #fff;
+      color: $primary-color;
+      padding: 20px;
+    }
+
+    & .drop-down-nav-item:last-child {
+      padding: 15px;
+    }
+
+    & .drop-down-nav-search {
+      height: 35px;
+      display: flex;
+
+      & input {
+        width: 100%;
+        flex: auto;
+        height: 100%;
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        padding: 15px;
+
+        &:focus {
+          background-color: #fff;
+          outline: 1px solid blue;
+          color: #333;
+        }
+
+        &::placeholder {
+          color: #fff;
+        }
+      }
+
+      & .btn-search {
+        border: 1px solid #fff;
+
+        &:hover {
+          background-color: #fff;
+          color: $primary-color;
+          border: 1px solid $primary-color;
+        }
+      }
+    }
+  }
+}

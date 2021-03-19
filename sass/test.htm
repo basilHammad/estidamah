@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .circle-icon {
+        background: #444750;
+        padding: 14px;
+        border-radius: 50%;
+        color: #fff;
+        /* font-size: 20px; */
+      }
+    </style>
+  </head>
+  <body>
+    <i class="fab fa-linkedin-in circle-icon"></i>
+    <i class="fab fa-twitter circle-icon"></i>
+    <i class="fas fa-video circle-icon"></i>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $("#btn").click(() => {
+        $("div").animate({ width: "toggle" });
+        console.log("gg");
+      });
+    </script>
+  </body>
+</html>

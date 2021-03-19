@@ -1,0 +1,31 @@
+.our-impact{
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & .discription-container{
+        background-color: #fff;
+        padding: 75px 0;
+
+        & .wrapper{
+            max-width: 1140px;
+            margin: auto;
+            text-align: center;
+
+            @media (max-width: 1200px){
+                max-width: 930px;
+            }
+            @media (max-width: 990px){
+                max-width: 690px;
+            }
+            @media (max-width: 767px){
+                max-width: 540px;
+                padding: 0 15px;
+            }
+    
+        }
+    }
+
+}

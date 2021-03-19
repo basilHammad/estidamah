@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./sass/main.css" />
+
+    <title>Estidamah</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="top">
+        <div class="region-above-burger">
+          <form class="search-website">
+            <input class="search-input" type="text" />
+            <button class="btn btn-search" type="submit">search</button>
+          </form>
+          <i class="fas fa-search fa=x2 search-icon"></i>
+          <div class="switch-language">عربي</div>
+
+          <div class="icons">
+            <a href="#">
+              <i class="fab fa-linkedin-in social-icon"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter social-icon"></i>
+            </a>
+            <a href="#">
+              <i class="fas fa-video social-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="nav-wrapper">
+          <div class="logo-container">
+            <div class="logo">
+              <img src="./dist/imgs/logo.svg" alt="" />
+            </div>
+          </div>
+
+          <nav class="nav-bar">
+            <div class="burger-container">
+              <button id="navbar-toggler" class="navbar-toggler">
+                <div class="burger-top"></div>
+                <div class="burger-middle"></div>
+                <div class="burger-bottom"></div>
+              </button>
+            </div>
+            <ul class="nav-items">
+              <li class="nav-item active">
+                <a href="#" class="nav-link">home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">about us</a>
+                <div class="hover-drop-down">
+                  <ul class="hover-drop-down-items">
+                    <li class="hover-drop-down-item"><a href="#">loerm</a></li>
+                    <li class="hover-drop-down-item"><a href="#">loerm</a></li>
+                    <li class="hover-drop-down-item"><a href="#">loerm</a></li>
+                    <li class="hover-drop-down-item"><a href="#">loerm</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">our services</a>
+                <div class="hover-drop-down">
+                  <ul class="hover-drop-down-items">
+                    <li class="hover-drop-down-item"><a href="#">loerm</a></li>
+                    <li class="hover-drop-down-item"><a href="#">loerm</a></li>
+                    <li class="hover-drop-down-item"><a href="#">loerm</a></li>
+                    <li class="hover-drop-down-item"><a href="#">loerm</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">research</a>
+                <div class="hover-drop-down">
+                  <ul class="hover-drop-down-items">
+                    <li class="hover-drop-down-item"><a href="#">loerm</a></li>
+                    <li class="hover-drop-down-item"><a href="#">loerm</a></li>
+                    <li class="hover-drop-down-item"><a href="#">loerm</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">puplications</a>
+                <div class="hover-drop-down">
+                  <ul class="hover-drop-down-items">
+                    <li class="hover-drop-down-item"><a href="#">loerm</a></li>
+                    <li class="hover-drop-down-item"><a href="#">loerm</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">media center</a>
+                <div class="hover-drop-down">
+                  <ul class="hover-drop-down-items">
+                    <li class="hover-drop-down-item"><a href="#">loerm</a></li>
+                    <li class="hover-drop-down-item"><a href="#">loerm</a></li>
+                    <li class="hover-drop-down-item"><a href="#">loerm</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item"><a href="#" class="nav-link">careers</a></li>
+            </ul>
+          </nav>
+
+          <nav class="drop-down-nav">
+            <ul class="drop-down-nav-items">
+              <li class="drop-down-nav-item active">
+                <a href="#">Home</a>
+              </li>
+              <li class="drop-down-nav-item">
+                <div class="drop-down-nav-item-wrapper">
+                  <a href="#">About Us</a>
+                  <i class="fas fa-chevron-right expand"></i>
+                </div>
+                <div class="sub-menu">
+                  <ul class="sub-menu-items">
+                    <li class="sub-menu-item"><a href="#">loerm</a></li>
+                    <li class="sub-menu-item"><a href="#">loerm</a></li>
+                    <li class="sub-menu-item"><a href="#">loerm</a></li>
+                    <li class="sub-menu-item"><a href="#">loerm</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="drop-down-nav-item">
+                <div class="drop-down-nav-item-wrapper">
+                  <a href="#">Our services</a>
+                  <i class="fas fa-chevron-right expand"></i>
+                </div>
+                <div class="sub-menu">
+                  <ul class="sub-menu-items">
+                    <li class="sub-menu-item"><a href="#">loerm</a></li>
+                    <li class="sub-menu-item"><a href="#">loerm</a></li>
+                    <li class="sub-menu-item"><a href="#">loerm</a></li>
+                    <li class="sub-menu-item"><a href="#">loerm</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="drop-down-nav-item">
+                <div class="drop-down-nav-item-wrapper">
+                  <a href="#">Reacearch</a>
+                  <i class="fas fa-chevron-right expand"></i>
+                </div>
+
+                <div class="sub-menu">
+                  <ul class="sub-menu-items">
+                    <li class="sub-menu-item"><a href="#">loerm</a></li>
+                    <li class="sub-menu-item"><a href="#">loerm</a></li>
+                    <li class="sub-menu-item"><a href="#">loerm</a></li>
+                    <li class="sub-menu-item"><a href="#">loerm</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="drop-down-nav-item">
+                <div class="drop-down-nav-item-wrapper">
+                  <a href="#">Puplication</a>
+                  <i class="fas fa-chevron-right expand"></i>
+                </div>
+
+                <div class="sub-menu">
+                  <ul class="sub-menu-items">
+                    <li class="sub-menu-item"><a href="#">loerm</a></li>
+                    <li class="sub-menu-item"><a href="#">loerm</a></li>
+                    <li class="sub-menu-item"><a href="#">loerm</a></li>
+                    <li class="sub-menu-item"><a href="#">loerm</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="drop-down-nav-item">
+                <div class="drop-down-nav-item-wrapper">
+                  <a href="#">Media Center</a>
+                  <i class="fas fa-chevron-right expand"></i>
+                </div>
+
+                <div class="sub-menu">
+                  <ul class="sub-menu-items">
+                    <li class="sub-menu-item"><a href="#">loerm</a></li>
+                    <li class="sub-menu-item"><a href="#">loerm</a></li>
+                    <li class="sub-menu-item"><a href="#">loerm</a></li>
+                    <li class="sub-menu-item"><a href="#">loerm</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="drop-down-nav-item">
+                <div class="drop-down-nav-item-wrapper">
+                  <a href="#">Careers</a>
+                </div>
+              </li>
+              <li class="drop-down-nav-item">
+                <form class="drop-down-nav-search">
+                  <input
+                    class="drop-down-nav-search-field"
+                    type="text"
+                    placeholder="Search the website"
+                  />
+                  <button class="btn btn-search" type="submit">Search</button>
+                </form>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-section">
+      <div class="slider-container">
+        <div class="slide hero-slide">
+          <img src="./dist/imgs/Stedamah_81 (1).jpg" alt="#" />
+          <div class="overlay"></div>
+          <div class="img-body">
+            <h1 class="main-title">Apply innovative agri-technologies</h1>
+            <p class="main">
+              Apply and promote innovative technology-enabled practices to
+              deliver sustainable agriculture research for protected cultivation
+            </p>
+            <a href="#" class="btn btn-secondary">OUR REACEARCH THEME</a>
+          </div>
+        </div>
+
+        <div class="slide hero-slide">
+          <video autoplay muted loop>
+            <source src="./dist/EstWeb- Homepage.mp4" />
+          </video>
+
+          <div class="overlay"></div>
+          <div id="rotate" class="video-body">
+            <ul style="display: none" class="video-text">
+              <li>In Harmony with Our Natural Resources</li>
+              <li>Mapping Agriculture to Our Climate Conditions</li>
+              <li>Informed Agriculture Investment Consultation and Services</li>
+              <li>Global Expertise to Adapt the Good Agriculture Practices</li>
+              <li>Together Towards Food Security</li>
+              <li>Sustainable Agriculture Made Easy Than Ever</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pagination-container">
+          <button id="video-btn" class="pagination-button active"></button>
+          <button id="img-btn" class="pagination-button"></button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      style="background-image: url(./dist/imgs/GreenHouse\ Technology_0.jpeg)"
+      class="who-are-we"
+    >
+      <div class="discription-container">
+        <div class="wrapper">
+          <h2 class="title">WHO WE ARE</h2>
+          <p>
+            The National Research and Development Center for Sustainable
+            Agriculture (Estidamah) is a standalone legal not-for-profit
+            research center based in the Kingdom of Saudi Arabia, managed by a
+            board of directors and chaired by the Minister of Environment, Water
+            & Agriculture. In 2011, Estidamah was set up upon a joint agreement
+            between the Ministry of Environment, Water, and Agriculture (MEWA)
+            and King Saud University (KSU) in Riyadh Techno Valley to serve as
+            the main office of the Center, with support of the Saudi Basic
+            Industries Corporation (SABIC).
+          </p>
+          <a href="#" class="btn btn-primary">know more</a>
+        </div>
+      </div>
+    </section>
+
+    <section
+      style="background-image: url(../dist/imgs/AdobeStock_278001692.jpeg)"
+      class="our-impact"
+    >
+      <div class="discription-container">
+        <div class="wrapper">
+          <h2 class="title">OUR IMPACT</h2>
+          <p>
+            At the heart of our research and studies, our past and current
+            research works focus on the need to secure sustainable agricultural
+            products for the people of Saudi Arabia. Practically, we deliver our
+            impact by addressing various key challenges, including – but not
+            limited to – scarce water resources and extreme climate conditions;
+            through a widely open innovative culture and strategic partnership
+            with the World’s leaders in protected cultivation, as well as
+            promoting good agricultural practices throughout the Kingdom. Here,
+            you can find more information on our research, works, projects and
+            successes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="what-we-do">
+      <div class="title-wrapper">
+        <h2 class="title">WHAT WE DO</h2>
+        <p>
+          We are conducting applied research in sustainable agriculture to
+          promote collaboration, technology, and knowledge transfer in the areas
+          of horticulture.
+        </p>
+      </div>
+
+      <div class="card-wrapper">
+        <div class="card">
+          <div class="img-wrapper">
+            <img class="img-card" src="./dist/imgs/image003 (2).jpg" alt="" />
+          </div>
+          <h2 class="title">Latest News</h2>
+        </div>
+
+        <div class="card">
+          <div class="img-wrapper">
+            <img
+              class="img-card"
+              src="./dist/imgs/Stedamah_81 (1).jpg"
+              alt=""
+            />
+          </div>
+          <h2 class="title">Publications</h2>
+        </div>
+
+        <div class="card">
+          <div class="img-wrapper">
+            <img
+              class="img-card"
+              src="./dist/imgs/AdobeStock_143575138 (2).jpeg"
+              alt=""
+            />
+          </div>
+          <h2 class="title">Publications</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="projects-wrapper">
+        <h2 class="title">PROJECTS</h2>
+        <div class="slider-wrapper">
+          <div class="slide sm-slide">
+            <div class="description">
+              <h3 class="sub-title">
+                Comparison between Hi-Tech, Med-Tech and Modified Plastic house
+                performance on Tomato Production
+              </h3>
+              <p>
+                On Estidamah, the Low-tech greenhouses are single-span pad and
+                fan-cooled high tunnels. The medium-tech greenhouses are tall,
+                multi-span, glass-covered greenhouses with a soilless growing
+                system
+              </p>
+              <a href="#" class="btn btn-primary">see result</a>
+            </div>
+
+            <div class="img-wrapper">
+              <img src="./dist/imgs/image (23).png" alt="" />
+            </div>
+          </div>
+
+          <div class="slide sm-slide">
+            <div class="description">
+              <h3 class="sub-title">
+                Evaluation of Nine Tomato Cultivars under Hi-Tech and Med-Tech
+                Greenhouses
+              </h3>
+              <p>
+                Tomato is one of the most important greenhouse vegetable crops
+                grown in the Kingdom of Saudi Arabia, with 1260 hectares
+                greenhouse planted area.
+              </p>
+            </div>
+            <div class="img-wrapper">
+              <img src="./dist/imgs/AdobeStock_278001692.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="pagination-container">
+          <button
+            id="first-slide-btn"
+            class="btn pagination-button active"
+          ></button>
+          <button id="seconde-slide-btn" class="btn pagination-button"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest-news">
+      <div class="title-wrapper">
+        <h2 class="title">Latest News</h2>
+        <p>
+          We have interested horticulture result that we want to share with you,
+          join us on on of the following
+        </p>
+      </div>
+      <div class="cards-wrapper">
+        <div class="card-wrapper">
+          <div class="card-larg">
+            <div class="img-wrapper">
+              <img class="card-img" src="./dist/imgs/WSDec2020_1.jpeg" alt="" />
+            </div>
+            <div class="title-section">
+              <h3 class="sub-title">
+                Modern Agriculture is a Promising Investment in Greenhouses
+              </h3>
+            </div>
+            <div class="info-wrapper">
+              <div class="field-wrapper">
+                <i class="far fa-calendar-alt"></i>
+                <p class="field">December 22, 2020</p>
+              </div>
+              <div class="field-wrapper">
+                <i class="fas fa-map-marker-alt"></i>
+                <p class="field">Estidameh Center</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-wrapper">
+          <div class="card-larg">
+            <div class="img-wrapper">
+              <img
+                class="card-img"
+                src="./dist/imgs/صورة القافلة الزراعية بتبوك1.png"
+                alt=""
+              />
+            </div>
+            <div class="title-section">
+              <h3 class="sub-title">
+                Estidamah participated in a workshop to raise awareness of Good
+                Agricultural Practices in Greenhouses in Tabuk
+              </h3>
+            </div>
+            <div class="info-wrapper">
+              <div class="field-wrapper">
+                <i class="far fa-calendar-alt"></i>
+                <p class="field">November 17, 2020</p>
+              </div>
+              <div class="field-wrapper">
+                <i class="fas fa-map-marker-alt"></i>
+                <p class="field">Tabuk region</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-wrapper">
+          <div class="card-larg">
+            <div class="img-wrapper">
+              <img
+                class="card-img"
+                src="./dist/imgs/فعالية حائل (1).jpg"
+                alt=""
+              />
+            </div>
+            <div class="title-section">
+              <h3 class="sub-title">
+                Estidamah organized a workshop on the Good Agricultural
+                Practices in Greenhouses in Hail
+              </h3>
+            </div>
+            <div class="info-wrapper">
+              <div class="field-wrapper">
+                <i class="far fa-calendar-alt"></i>
+                <p class="field">November 04, 2020</p>
+              </div>
+              <div class="field-wrapper">
+                <i class="fas fa-map-marker-alt"></i>
+                <p class="field">Hail Regon</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="view-all-wrapper">
+        <a href="#" class="btn btn-primary">view all</a>
+      </div>
+    </section>
+
+    <section class="featured">
+      <div class="featured-wrapper">
+        <div class="img-wrapper">
+          <img src="./dist/imgs/1920px-SABIC_logo.svg.png" alt="" />
+        </div>
+        <div class="img-wrapper">
+          <img src="./dist/imgs/وزارة البيئة السعودية.png" alt="" />
+        </div>
+        <div class="img-wrapper">
+          <img src="./dist/imgs/ksu_masterlogo_colour_rgb.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="join-us">
+      <div class="join-us-wrapper">
+        <div class="title-wrapper">
+          <h2 class="title">JOIN OUR COMMUNITY</h2>
+        </div>
+        <form class="join-us-form">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              class="join-us-input"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              class="join-us-input"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="button-wrapper">
+            <button type="submit" class="btn btn-secondary">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-top">
+          <nav class="nav-footer">
+            <ul class="nav-items">
+              <li class="nav-item active">
+                <a href="#" class="nav-link">home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">about us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">our services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">research</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">puplications</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">media center</a>
+              </li>
+              <li class="nav-item"><a href="#" class="nav-link">careers</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <div class="copy-rights">
+            &#169; | All rights reserved | Saudi Arabia
+          </div>
+          <div class="icons">
+            <a href="#">
+              <i class="fab fa-linkedin-in social-icon"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter social-icon"></i>
+            </a>
+            <a href="#">
+              <i class="fas fa-video social-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
