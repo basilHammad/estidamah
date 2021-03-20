@@ -3,21 +3,8 @@
   padding: 30px 0;
 
   & .join-us-wrapper {
-    max-width: 1140px;
-    margin: auto;
     display: flex;
     flex-direction: column;
-
-    @media (max-width: 1200px) {
-      max-width: 930px;
-    }
-    @media (max-width: 990px) {
-      max-width: 690px;
-    }
-    @media (max-width: 767px) {
-      max-width: 540px;
-      padding: 0 15px;
-    }
 
     & .title-wrapper {
       text-align: center;
@@ -28,7 +15,6 @@
       display: flex;
 
       @media (max-width: 767px) {
-        max-width: 540px;
         flex-direction: column;
       }
 

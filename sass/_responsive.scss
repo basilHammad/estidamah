@@ -1,0 +1,76 @@
+@media (max-width: 1200px) {
+  .container {
+    max-width: 930px;
+  }
+
+  .header
+    .bottom
+    .nav-wrapper
+    .nav-bar
+    .nav-items
+    .nav-item
+    .hover-drop-down
+    .hover-drop-down-items {
+    padding-left: 254px;
+  }
+}
+
+@media (max-width: 990px) {
+  .container {
+    max-width: 690px;
+  }
+
+  .search-icon {
+    display: none;
+  }
+
+  .nav-wrapper {
+    justify-content: flex-end;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .header .bottom .nav-wrapper .logo {
+    width: 120px;
+    height: 145.39px;
+    left: 15px;
+  }
+
+  .header .bottom .nav-wrapper .nav-bar {
+    padding: 0;
+  }
+
+  .header .bottom .nav-wrapper .nav-bar .navbar-toggler {
+    display: flex;
+  }
+
+  .header .bottom .nav-wrapper .nav-bar .nav-items {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+    padding: 0 15px;
+  }
+
+  .nav-wrapper {
+    justify-content: flex-end;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .main-title {
+    font-size: calc(1.425rem + 2.1vw);
+  }
+
+  .what-we-do .card-wrapper {
+    flex-direction: column;
+  }
+
+  .latest-news .cards-wrapper {
+    padding: 15px;
+    flex-direction: column;
+  }
+}

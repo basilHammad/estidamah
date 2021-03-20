@@ -1,76 +1,46 @@
-.what-we-do{
-    text-align: center;
-    padding: 75px 0;
+.what-we-do {
+  text-align: center;
+  padding: 75px 0;
 
+  & .container {
+    margin: 0 auto 10px;
+  }
 
-    & .title-wrapper{
-        max-width: 1140px;
-        margin: 0 auto 10px;
+  & .card-wrapper {
+    display: flex;
+    justify-content: space-between;
 
-        @media (max-width: 1200px){
-            max-width: 930px;
+    & .card {
+      flex: 0 0 31%;
+      border-bottom: 3px solid #00723675;
+
+      & .img-wrapper {
+        overflow: hidden;
+
+        & img {
+          width: 100%;
+          height: 100%;
+          transition: 0.2s;
+          object-fit: cover;
         }
-        @media (max-width: 990px){
-            max-width: 690px;
-        }
-        @media (max-width: 767px){
-            max-width: 540px;
-            padding: 0 15px;
-            flex-direction: column;
-        }
-}
+      }
 
-    & .card-wrapper{
-        max-width: 1140px;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-       
+      & .title {
+        text-align: left;
+        padding: 15px 0;
+      }
 
-        & .card{
-            flex: 0 0 31%;
-            border-bottom: 3px solid #00723675;
+      &:hover .img-card {
+        transform: scale(1.1);
+      }
 
-            & .img-wrapper{
-                overflow: hidden;
+      &:hover {
+        border-bottom-color: $primary-color;
+      }
 
-                & img {
-                    width: 100%;
-                    height: 100%;
-                    transition: .2s;
-                    object-fit: cover;
-                }
-            }
-
-            & .title{
-                text-align: left;
-                padding: 15px 0;
-            }
-
-            &:hover .img-card{
-                transform: scale(1.1);
-            }
-
-            &:hover{
-                border-bottom-color:$primary-color ;
-            }
-
-            @media (max-width: 767px){
-                margin-bottom: 15px;
-            }
-        }
-
-        @media (max-width: 1200px){
-                max-width: 930px;
-        }
-        @media (max-width: 990px){
-            max-width: 690px;
-        }
-        @media (max-width: 767px){
-            max-width: 540px;
-            padding: 0 15px;
-            flex-direction: column;
-        }
+      @media (max-width: 767px) {
+        margin-bottom: 15px;
+      }
     }
+  }
 }
-

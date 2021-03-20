@@ -1,11 +1,16 @@
 $(document).ready(() => {
   $(".hero-section").height($(window).height() - $(".header").innerHeight());
 
-  $(".search-icon").on("click", () => {
-    $(".search-website").animate({ width: "toggle" }, 500);
+  $(".search-icon").click(() => {
+    $(".input-wrapper , .search-btn-wrapper").toggleClass("slide");
+    if ($(".input-wrapper  , .search-btn-wrapper").hasClass("slide")) {
+      $(".search-btn-wrapper").css("transition-delay", "0s");
+      $(".input-wrapper").css({ transitionDelay: "0.2s" });
+    } else {
+      $(".search-btn-wrapper").css("transition-delay", "0.2s");
+      $(".input-wrapper").css({ transitionDelay: "0s" });
+    }
   });
-
-  // $(".nav-wrapper").height($(".bottom .nav-items").innerHeight());
 
   $("#img-btn").on("click", function () {
     if (!$(this).hasClass("active")) {
@@ -45,12 +50,12 @@ $(document).ready(() => {
 
   setInterval(() => {
     if ($(".hero-slide").css("left") === "0px") {
-      $("#video-btn").addClass("active").siblings().removeClass("active");
+      $("#img-btn").addClass("active").siblings().removeClass("active");
       $(".hero-slide").animate({
         left: "-100%",
       });
     } else {
-      $("#img-btn").addClass("active").siblings().removeClass("active");
+      $("#video-btn").addClass("active").siblings().removeClass("active");
       $(".hero-slide").animate({
         left: "0",
       });

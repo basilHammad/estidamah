@@ -2,86 +2,71 @@
   padding: 30px 0 18px;
   background-color: #444750;
 
-  & .footer-wrapper {
-    max-width: 1140px;
-    margin: auto;
+  & .footer-top {
+    height: 100%;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
 
-    @media (max-width: 1200px) {
-      max-width: 930px;
-    }
-    @media (max-width: 990px) {
-      max-width: 690px;
-    }
-    @media (max-width: 767px) {
-      max-width: 540px;
-      padding: 0 15px;
-    }
+    & .nav-footer {
+      & .nav-items {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 0 15px;
 
-    & .footer-top {
-      height: 100%;
-      border-bottom: 1px solid #fff;
-      margin-bottom: 10px;
+        & .nav-item {
+          flex: auto;
+          padding: 8px 0;
+          color: #fff;
 
-      & .nav-footer {
-        & .nav-items {
-          height: 100%;
-          display: flex;
-          flex-wrap: wrap;
-          padding: 0 0 15px;
+          @media (max-width: 990px) {
+            flex: 50%;
+          }
 
-          & .nav-item {
-            flex: auto;
-            padding: 8px 0;
-            color: #fff;
-            @media (max-width: 990px) {
-              flex: 50%;
-            }
+          & .nav-link {
+            color: inherit;
+          }
 
-            & .nav-link {
-              color: inherit;
-            }
-
-            &:hover {
-              color: $primary-color;
-            }
+          &:hover {
+            color: $primary-color;
           }
         }
       }
     }
+  }
 
-    & .footer-bottom {
+  & .footer-bottom {
+    display: flex;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    & .copy-rights {
+      padding-top: 15px;
+      flex: 80%;
+      color: #fff;
+      @media (max-width: 767px) {
+        text-align: center;
+        order: 2;
+      }
+    }
+
+    & .icons {
+      flex: 20%;
+      color: #fff;
       display: flex;
+      justify-content: flex-end;
+
+      & .social-icon {
+        background-color: #fff;
+        color: #444750;
+        margin-right: 10px;
+      }
 
       @media (max-width: 767px) {
-        flex-direction: column;
-      }
-
-      & .copy-rights {
-        padding-top: 15px;
-        flex: 80%;
-        color: #fff;
-        @media (max-width: 767px) {
-          text-align: center;
-          order: 2;
-        }
-      }
-
-      & .icons {
-        flex: 20%;
-        color: #fff;
-        display: flex;
-        justify-content: flex-end;
-
-        & .social-icon {
-          background-color: #fff;
-          color: #444750;
-          margin-right: 10px;
-        }
-
-        @media (max-width: 767px) {
-          justify-content: center;
-          order: 1;
-        }
+        justify-content: center;
+        order: 1;
       }
     }
   }
