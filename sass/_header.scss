@@ -9,19 +9,26 @@
     & .region-above-burger {
       display: flex;
       justify-content: flex-end;
-      align-items: center;
+      // align-items: center;
+      padding-top: 10px;
       width: 1140px;
 
       & .icons {
-        margin-left: 25px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
       }
 
       & .search-icon {
-        margin-left: 20px;
+        // margin-left: 5px;
+        // background-color: red;
+        // padding-top: 8px;
+        padding: 8px 10px;
       }
 
       & .switch-language {
         margin-left: 20px;
+        padding-top: 4px;
       }
 
       & .search-website {
@@ -86,7 +93,7 @@
         width: 140px;
         height: 179px;
         background-color: #fff;
-        box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 20%);
+        box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2);
         border-radius: 0 0 15px 15px;
         z-index: 100;
 
@@ -135,14 +142,17 @@
           list-style: none;
           display: flex;
           flex-wrap: wrap;
+          font-weight: 400;
 
           & .nav-item {
-            padding: 10px 15px;
             text-align: center;
             color: #fff;
 
             & .nav-link {
+              display: inline-block;
               color: inherit;
+              font-size: 16px;
+              padding: 10px 15px;
             }
 
             .hover-drop-down {
@@ -157,7 +167,7 @@
                 max-width: 1140px;
                 display: flex;
                 margin: auto;
-                padding-left: 158px;
+                padding-left: 175px;
 
                 & .hover-drop-down-item {
                   padding: 10px 15px;

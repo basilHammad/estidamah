@@ -28,6 +28,8 @@ ul {
 .title {
   font-size: 1.5rem;
   color: #444750;
+  font-weight: 400;
+  margin: 0 0 8px;
 }
 
 .sub-title {
@@ -42,13 +44,10 @@ P {
 
 .social-icon {
   background: #444750;
-  padding: 10px;
+  padding: 6px;
   border-radius: 50%;
   color: #fff;
-
-  &:not(:first-child) {
-    margin-left: 10px;
-  }
+  margin-left: 10px;
 }
 
 .container {
